@@ -1,0 +1,2374 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Dossier de Sponsoring — Mohamed Amin EL FEZARI — Saison Compétitive 2026
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f7f1e8;
+        --bg-alt: #fffdf8;
+        --paper: #fdfaf4;
+        --ink: #231f20;
+        --ink-soft: rgba(35, 31, 32, 0.74);
+        --brown: #3a241b;
+        --gold: #b89a6c;
+        --gold-soft: #c8a96b;
+        --champagne: #d6bc84;
+        --line: rgba(58, 36, 27, 0.14);
+        --line-strong: rgba(58, 36, 27, 0.24);
+        --shadow: 0 18px 40px rgba(35, 31, 32, 0.08);
+        --radius: 22px;
+        --radius-sm: 16px;
+        --content: 1380px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Inter", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+
+      @page {
+        size: A4 landscape;
+        margin: 0;
+      }
+
+      .document {
+        width: 100%;
+      }
+
+      .page {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        min-height: 210mm;
+        padding: 22mm 18mm;
+        break-after: page;
+        page-break-after: always;
+        overflow: hidden;
+        background:
+          radial-gradient(
+            circle at top right,
+            rgba(184, 154, 108, 0.08),
+            transparent 34%
+          ),
+          radial-gradient(
+            circle at bottom left,
+            rgba(58, 36, 27, 0.06),
+            transparent 28%
+          ),
+          var(--bg);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .page:last-child {
+        break-after: auto;
+        page-break-after: auto;
+      }
+
+      .page::before {
+        content: "";
+        position: absolute;
+        inset: 14mm;
+        border: 1px solid rgba(58, 36, 27, 0.08);
+        pointer-events: none;
+      }
+
+      .frame {
+        position: relative;
+        z-index: 1;
+        max-width: var(--content);
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .topline {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 22px;
+        color: var(--ink-soft);
+        font-size: 11px;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+      }
+
+      .rule {
+        height: 1px;
+        flex: 1;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(184, 154, 108, 0.55),
+          transparent
+        );
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--gold);
+        text-transform: uppercase;
+        letter-spacing: 0.28em;
+        font-size: 11px;
+        font-weight: 700;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 44px;
+        height: 1px;
+        background: var(--gold);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      p {
+        margin: 0;
+      }
+
+      .title-display {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(54px, 7vw, 108px);
+        line-height: 0.92;
+        font-weight: 700;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+        color: var(--ink);
+      }
+
+      .title-large {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(34px, 4vw, 66px);
+        line-height: 0.98;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        color: var(--ink);
+      }
+
+      .title-medium {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(26px, 2.4vw, 42px);
+        line-height: 1.02;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+      }
+
+      .title-small {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(22px, 2vw, 34px);
+        line-height: 1.04;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+      }
+
+      .body-text {
+        font-size: 16px;
+        line-height: 1.68;
+        color: var(--ink-soft);
+      }
+
+      .body-text p + p {
+        margin-top: 14px;
+      }
+
+      .lead {
+        font-size: 18px;
+        line-height: 1.75;
+      }
+
+      .serif {
+        font-family: "Cormorant Garamond", serif;
+      }
+
+      .muted {
+        color: var(--ink-soft);
+      }
+
+      .gold {
+        color: var(--gold);
+      }
+
+      .section-grid {
+        display: grid;
+        gap: 22px;
+      }
+
+      .grid-2 {
+        grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
+        align-items: stretch;
+      }
+
+      .grid-2-wide {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      }
+
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .stack {
+        display: grid;
+        gap: 16px;
+      }
+
+      .card,
+      .panel,
+      .quote-block,
+      .table-block,
+      .media-block {
+        background: rgba(255, 253, 248, 0.92);
+        border: 1px solid rgba(58, 36, 27, 0.1);
+        box-shadow: var(--shadow);
+        border-radius: var(--radius);
+      }
+
+      .card,
+      .panel,
+      .table-block,
+      .quote-block,
+      .media-block {
+        padding: 22px;
+      }
+
+      .panel-quiet {
+        background: rgba(253, 250, 244, 0.86);
+        border: 1px solid rgba(58, 36, 27, 0.08);
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+        gap: 30px;
+        align-items: stretch;
+      }
+
+      .hero-copy {
+        display: grid;
+        align-content: center;
+        gap: 22px;
+        padding: 18px 4px 18px 0;
+      }
+
+      .hero-kicker {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 11px;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+        color: var(--gold);
+        font-weight: 800;
+      }
+
+      .hero-kicker::before,
+      .hero-kicker::after {
+        content: "";
+        height: 1px;
+        flex: 1;
+        background: rgba(184, 154, 108, 0.65);
+      }
+
+      .hero-title-wrap {
+        display: grid;
+        gap: 12px;
+      }
+
+      .hero-subline {
+        max-width: 760px;
+        font-size: 18px;
+        line-height: 1.72;
+        color: var(--ink-soft);
+      }
+
+      .hero-meta {
+        display: grid;
+        gap: 10px;
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+      }
+
+      .quote-block {
+        position: relative;
+        padding: 28px 26px 26px;
+      }
+
+      .quote-block::before {
+        content: "“";
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 84px;
+        line-height: 1;
+        color: rgba(184, 154, 108, 0.22);
+      }
+
+      .quote-text {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 24px;
+        line-height: 1.45;
+        font-weight: 600;
+        color: var(--brown);
+      }
+
+      .quote-small {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 22px;
+        line-height: 1.5;
+        font-style: italic;
+        color: var(--brown);
+      }
+
+      .image-block {
+        display: grid;
+        gap: 10px;
+        align-content: start;
+      }
+
+      .image-placeholder {
+        min-height: 360px;
+        border-radius: var(--radius);
+        border: 1px solid rgba(58, 36, 27, 0.14);
+        background:
+          linear-gradient(
+            135deg,
+            rgba(35, 31, 32, 0.93),
+            rgba(58, 36, 27, 0.86)
+          ),
+          linear-gradient(160deg, rgba(184, 154, 108, 0.24), transparent 42%);
+        color: #f9f3ea;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 28px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .image-placeholder::before {
+        content: "";
+        position: absolute;
+        inset: 16px;
+        border: 1px solid rgba(214, 188, 132, 0.22);
+        border-radius: calc(var(--radius) - 10px);
+      }
+
+      .image-label {
+        max-width: 82%;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 24px;
+        line-height: 1.32;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        text-wrap: balance;
+      }
+
+      .caption {
+        font-size: 12px;
+        line-height: 1.45;
+        color: var(--ink-soft);
+        letter-spacing: 0.02em;
+      }
+
+      .list,
+      .plain-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 12px;
+      }
+
+      .list li,
+      .plain-list li {
+        position: relative;
+        padding-left: 18px;
+        color: var(--ink-soft);
+        line-height: 1.6;
+      }
+
+      .list li::before,
+      .plain-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.75em;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--gold);
+      }
+
+      .stat-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .stat-card {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 253, 248, 0.95),
+          rgba(247, 241, 232, 0.92)
+        );
+        border: 1px solid rgba(58, 36, 27, 0.1);
+        border-radius: 18px;
+        padding: 18px 16px;
+        display: grid;
+        gap: 8px;
+      }
+
+      .stat-label {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: var(--gold);
+        font-weight: 800;
+      }
+
+      .stat-value {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 28px;
+        line-height: 1;
+        font-weight: 700;
+        color: var(--ink);
+      }
+
+      .stat-note {
+        font-size: 13px;
+        line-height: 1.45;
+        color: var(--ink-soft);
+      }
+
+      .table-block {
+        overflow: hidden;
+        padding: 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      thead th {
+        background: rgba(58, 36, 27, 0.95);
+        color: #f9f3ea;
+        text-align: left;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        font-weight: 700;
+        padding: 16px 18px;
+      }
+
+      tbody td {
+        padding: 15px 18px;
+        vertical-align: top;
+        font-size: 13px;
+        line-height: 1.55;
+        color: var(--ink-soft);
+        border-top: 1px solid rgba(58, 36, 27, 0.1);
+      }
+
+      tbody tr:nth-child(even) td {
+        background: rgba(247, 241, 232, 0.58);
+      }
+
+      .table-note {
+        padding: 18px 20px 20px;
+        font-size: 12px;
+        line-height: 1.6;
+        color: var(--ink-soft);
+        border-top: 1px solid rgba(58, 36, 27, 0.1);
+        background: rgba(255, 253, 248, 0.78);
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid rgba(184, 154, 108, 0.3);
+        background: rgba(214, 188, 132, 0.12);
+        color: var(--brown);
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        font-size: 11px;
+        font-weight: 800;
+        border-radius: 999px;
+        padding: 10px 14px;
+        width: fit-content;
+      }
+
+      .section-head {
+        display: grid;
+        gap: 12px;
+        margin-bottom: 20px;
+      }
+
+      .section-number {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        color: var(--gold);
+        font-weight: 800;
+      }
+
+      .section-title-wrap {
+        display: grid;
+        gap: 8px;
+      }
+
+      .section-intro {
+        max-width: 1020px;
+        font-size: 16px;
+        line-height: 1.72;
+        color: var(--ink-soft);
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 22px;
+      }
+
+      .three-col {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .stack-card {
+        display: grid;
+        gap: 10px;
+      }
+
+      .mini-label {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.22em;
+        color: var(--gold);
+        font-weight: 800;
+      }
+
+      .split-accent {
+        display: grid;
+        grid-template-columns: 1fr 1px 1fr;
+        gap: 22px;
+        align-items: stretch;
+      }
+
+      .vertical-rule {
+        background: linear-gradient(
+          180deg,
+          transparent,
+          rgba(184, 154, 108, 0.65),
+          transparent
+        );
+      }
+
+      .lead-list {
+        display: grid;
+        gap: 18px;
+      }
+
+      .lead-item {
+        display: grid;
+        gap: 8px;
+        padding: 18px 0;
+        border-top: 1px solid rgba(58, 36, 27, 0.1);
+      }
+
+      .lead-item:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      .lead-item h4 {
+        margin: 0;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 26px;
+        line-height: 1.05;
+        font-weight: 700;
+      }
+
+      .lead-item p,
+      .lead-item li {
+        font-size: 15px;
+      }
+
+      .media-shell {
+        display: grid;
+        gap: 16px;
+      }
+
+      .media-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.92fr) minmax(300px, 1.08fr);
+        gap: 18px;
+        align-items: stretch;
+      }
+
+      .align-end {
+        align-self: end;
+      }
+
+      .narrow {
+        max-width: 860px;
+      }
+
+      .compact p + p {
+        margin-top: 10px;
+      }
+
+      .chip-line {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        border: 1px solid rgba(58, 36, 27, 0.12);
+        padding: 8px 12px;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--brown);
+        background: rgba(255, 253, 248, 0.82);
+      }
+
+      .package-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .package-card {
+        display: grid;
+        gap: 14px;
+      }
+
+      .package-head {
+        display: grid;
+        gap: 8px;
+      }
+
+      .package-price {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 34px;
+        line-height: 1;
+        font-weight: 700;
+        color: var(--brown);
+      }
+
+      .package-tag {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.24em;
+        color: var(--gold);
+        font-weight: 800;
+      }
+
+      .footer-note {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.24em;
+        color: rgba(35, 31, 32, 0.6);
+        text-align: center;
+      }
+
+      .cover {
+        background:
+          radial-gradient(
+            circle at 18% 18%,
+            rgba(184, 154, 108, 0.17),
+            transparent 24%
+          ),
+          radial-gradient(
+            circle at 82% 24%,
+            rgba(58, 36, 27, 0.11),
+            transparent 22%
+          ),
+          linear-gradient(
+            180deg,
+            rgba(247, 241, 232, 0.88),
+            rgba(255, 253, 248, 0.96)
+          );
+      }
+
+      .cover-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.9fr);
+        gap: 24px;
+        align-items: stretch;
+      }
+
+      .cover-copy {
+        display: grid;
+        align-content: center;
+        gap: 22px;
+        padding: 22px 0 18px;
+      }
+
+      .cover-stamp {
+        display: grid;
+        gap: 10px;
+        justify-items: start;
+      }
+
+      .cover-note {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.34em;
+        text-transform: uppercase;
+        color: rgba(35, 31, 32, 0.68);
+      }
+
+      .cover-subtitle {
+        font-size: 22px;
+        line-height: 1.5;
+        color: var(--ink-soft);
+      }
+
+      .cover-quote {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 24px;
+        line-height: 1.45;
+        font-style: italic;
+        color: var(--brown);
+        max-width: 760px;
+      }
+
+      .cover-portrait {
+        display: grid;
+        gap: 14px;
+        align-self: center;
+      }
+
+      .cover-portrait .image-placeholder {
+        min-height: 560px;
+      }
+
+      .contents-layout {
+        display: grid;
+        grid-template-columns: minmax(340px, 0.72fr) minmax(0, 1.28fr);
+        gap: 22px;
+        align-items: stretch;
+      }
+
+      .toc-card {
+        display: grid;
+        gap: 18px;
+      }
+
+      .toc-list li {
+        font-size: 15px;
+      }
+
+      .toc-number {
+        color: var(--gold);
+        font-weight: 800;
+        margin-right: 8px;
+      }
+
+      .timeline-label {
+        white-space: pre-line;
+      }
+
+      .contact-table td:first-child {
+        width: 30%;
+        color: var(--brown);
+        font-weight: 700;
+      }
+
+      .quote-right {
+        text-align: right;
+      }
+
+      .section-spread {
+        display: grid;
+        gap: 20px;
+      }
+
+      .intro-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: flex-end;
+      }
+
+      .section-id {
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+
+      .line-card {
+        border-top: 1px solid rgba(58, 36, 27, 0.1);
+        padding-top: 18px;
+      }
+
+      .footer-mark {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        margin-top: 16px;
+        font-size: 11px;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: rgba(35, 31, 32, 0.58);
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .right {
+        text-align: right;
+      }
+
+      .tight {
+        gap: 12px;
+      }
+
+      .small-copy {
+        font-size: 14px;
+        line-height: 1.65;
+      }
+
+      .page-1 .hero-copy {
+        padding-right: 30px;
+      }
+
+      .page-2 .contents-layout,
+      .page-5 .grid-2,
+      .page-7 .grid-2,
+      .page-8 .grid-2,
+      .page-9 .media-grid,
+      .page-10 .grid-2,
+      .page-13 .grid-2 {
+        align-items: start;
+      }
+
+      @media print {
+        html,
+        body {
+          background: var(--bg);
+        }
+
+        .page {
+          min-height: 100vh;
+          border: 0;
+          box-shadow: none;
+        }
+      }
+
+      @media (max-width: 1180px) {
+        .page {
+          padding: 18mm 14mm;
+        }
+
+        .hero,
+        .cover-grid,
+        .contents-layout,
+        .media-grid,
+        .grid-2,
+        .grid-2-wide,
+        .package-grid,
+        .two-col,
+        .three-col,
+        .grid-3,
+        .stat-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .split-accent {
+          grid-template-columns: 1fr;
+        }
+
+        .vertical-rule {
+          display: none;
+        }
+
+        .cover-portrait .image-placeholder,
+        .image-placeholder {
+          min-height: 320px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="document">
+      <section class="page cover page-1">
+        <div class="frame">
+          <div class="topline">
+            <span>DOCUMENT STRICTEMENT CONFIDENTIEL</span>
+            <span class="rule"></span>
+            <span>SAISON COMPÉTITIVE 2026</span>
+          </div>
+          <div class="cover-grid">
+            <div class="cover-copy">
+              <div class="cover-stamp">
+                <span class="eyebrow">Dossier de Sponsoring</span>
+                <h1 class="title-display">Mohamed Amin EL FEZARI</h1>
+              </div>
+              <div class="stack tight">
+                <p class="cover-subtitle serif">
+                  Maître des Échecs | Champion du Maroc
+                </p>
+                <div class="quote-block">
+                  <div class="quote-small">
+                    « L'Excellence Stratégique au Service de Votre Marque »
+                  </div>
+                </div>
+                <p class="body-text lead">
+                  Circuit Català d'Escacs — Espagne | WACC 2026 — Nigéria ·
+                  Horizon International Décembre 2026
+                </p>
+                <p class="body-text">
+                  Préparé pour les Directions Marketing, RSE &amp; Partenariats
+                  Stratégiques
+                </p>
+              </div>
+              <div class="hero-meta">
+                <span>Luxury editorial dossier</span>
+                <span>Investor-grade sponsorship publication</span>
+              </div>
+            </div>
+            <div class="cover-portrait">
+              <figure class="image-block">
+                <div class="image-placeholder">
+                  <div class="image-label">
+                    image_page_1_01<br />Mohamed Amin EL FEZARI — Portrait
+                    officiel
+                  </div>
+                </div>
+                <figcaption class="caption">
+                  Mohamed Amin EL FEZARI — Portrait officiel
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-2">
+        <div class="frame">
+          <div class="section-head">
+            <span class="section-number">Sommaire</span>
+            <div class="section-title-wrap">
+              <h2 class="title-large">Sommaire</h2>
+            </div>
+          </div>
+          <div class="contents-layout">
+            <figure class="image-block">
+              <div class="image-placeholder">
+                <div class="image-label">
+                  image_page_2_01<br />Sommaire visuel du dossier
+                </div>
+              </div>
+              <figcaption class="caption">
+                Sommaire visuel du dossier
+              </figcaption>
+            </figure>
+            <div class="card toc-card panel-quiet">
+              <ul class="plain-list toc-list">
+                <li>
+                  <span class="toc-number">01 —</span>Le Mot du Champion (Chaque
+                  Mouvement Compte)
+                </li>
+                <li>
+                  <span class="toc-number">02 —</span>Le Projet Sportif
+                  (Calendrier &amp; Progression Stratégique)
+                </li>
+                <li>L'Encadrement Technique (Une Équipe de Légende)</li>
+                <li>
+                  <span class="toc-number">03 —</span>Pourquoi les Échecs ?
+                  (Pourquoi Associer Votre Image aux Échecs)
+                </li>
+                <li>
+                  Impact &amp; Présence (Présence Médiatique &amp; Communauté)
+                </li>
+                <li>
+                  <span class="toc-number">04 —</span>Formules de Sponsoring
+                  (Packages &amp; Investissements)
+                </li>
+                <li>
+                  <span class="toc-number">05 —</span>Budget Prévisionnel
+                  (Allocation des Fonds)
+                </li>
+                <li>
+                  <span class="toc-number">06 —</span>Contact &amp; Prochaines
+                  Étapes (Le Premier Mouvement Décisif)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-3">
+        <div class="frame section-spread">
+          <div class="section-head">
+            <span class="section-number">01 — LE MOT DU CHAMPION</span>
+            <div class="section-title-wrap">
+              <h2 class="title-large">Chaque Mouvement Compte</h2>
+            </div>
+          </div>
+          <div class="grid-2 section-grid">
+            <div class="stack">
+              <div class="quote-block">
+                <div class="quote-text">
+                  "Les échecs m'ont appris que chaque mouvement compte.
+                  Aujourd'hui, je veux que chaque mouvement que je joue pour le
+                  Maroc sur la scène mondiale porte également votre nom."
+                </div>
+              </div>
+              <div class="body-text lead compact">
+                <p>Mesdames, Messieurs,</p>
+                <p>
+                  Je m'appelle Mohamed Amin EL FEZARI. Je suis Champion du Maroc
+                  aux Échecs, et depuis plus d'une décennie, je porte les
+                  couleurs de mon pays avec fierté sur les échiquiers les plus
+                  prestigieux de la planète.
+                </p>
+                <p>
+                  Mon aventure au plus haut niveau a commencé en 2015, lorsque
+                  j'ai représenté le Maroc au Championnat du Monde Junior
+                  d'Échecs (WJCC) : une scène internationale où l'élite de la
+                  jeunesse mondiale se mesure coup pour coup. Ce fut une
+                  révélation : celle d'un athlète qui comprend que la vraie
+                  compétition n'est pas seulement une affaire de talent, mais de
+                  discipline absolue, de rigueur analytique et de sang-froid
+                  sous pression.
+                </p>
+                <p>
+                  En 2023, j'ai renouvelé ce rendez-vous avec l'excellence en
+                  représentant à nouveau le Maroc au Championnat du Monde des
+                  catégories ELO (WACC 2023). Cette participation a confirmé ma
+                  place parmi les joueurs de référence du continent africain et
+                  du monde arabe (#1 Africain) , et a cristallisé ma vision pour
+                  l'avenir.
+                </p>
+                <p>
+                  Aujourd'hui, je me prépare pour la saison la plus ambitieuse
+                  de ma carrière : le Circuit Català d'Escacs en Espagne — une
+                  série d'opens internationaux de haut niveau en Europe , suivie
+                  du couronnement ultime : le Championnat du Monde WACC 2026 au
+                  Nigéria, où je représenterai une fois de plus le drapeau
+                  marocain avec l'intention bien arrêtée de ramener une
+                  distinction nationale.
+                </p>
+                <p>
+                  Pour accomplir ce projet avec l'excellence qu'il mérite, je
+                  cherche des partenaires qui partagent mes valeurs : la
+                  précision dans la décision, la vision à long terme, et
+                  l'ambition de laisser une empreinte durable. Des valeurs qui,
+                  j'en suis convaincu, sont aussi les vôtres.
+                </p>
+                <p>C'est à vous que je tends la main aujourd'hui.</p>
+                <p>
+                  — Mohamed Amin EL FEZARI<br />International Marocain et
+                  Champion du Maroc des échecs.
+                </p>
+              </div>
+            </div>
+            <figure class="image-block align-end">
+              <div class="image-placeholder">
+                <div class="image-label">
+                  image_page_3_01<br />Portrait de Mohamed Amin EL FEZARI
+                </div>
+              </div>
+              <figcaption class="caption">
+                Portrait de Mohamed Amin EL FEZARI
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-4">
+        <div class="frame section-spread">
+          <div class="section-head">
+            <span class="section-number">02 — PALMARÈS</span>
+            <div class="section-title-wrap">
+              <h2 class="title-large">Palmarès d'un Champion</h2>
+            </div>
+            <p class="section-intro">
+              Un parcours construit sur l'excellence, la constance et une
+              reconnaissance acquise sur les scènes nationale et internationale.
+              Mohamed Amin EL FEZARI s'est imposé comme une référence du jeu
+              d'échecs marocain et africain.
+            </p>
+          </div>
+          <div class="grid-2 section-grid">
+            <figure class="image-block">
+              <div class="image-placeholder">
+                <div class="image-label">
+                  image_page_4_01<br />Mohamed Amin EL FEZARI au Chess
+                  Championship 2023 — Muscat
+                </div>
+              </div>
+              <figcaption class="caption">
+                Mohamed Amin EL FEZARI au Chess Championship 2023 — Muscat
+              </figcaption>
+            </figure>
+            <div class="lead-list">
+              <div class="lead-item">
+                <h4>🌍 RAYONNEMENT MONDIAL</h4>
+                <ul class="list">
+                  <li>
+                    1er Africain au Championnat du Monde WACC (2023) à Muscat et
+                    #14 Mondial.
+                  </li>
+                  <li>
+                    Unique représentant de l'Afrique et du Monde Arabe au
+                    Championnat du Monde en Sibérie (2015)
+                  </li>
+                  <li>
+                    Candidat Maître au Championnat d'Afrique Junior aux
+                    Seychelles (2015).
+                  </li>
+                </ul>
+              </div>
+              <div class="lead-item">
+                <h4>🏆 ÉLITE NATIONALE</h4>
+                <ul class="list">
+                  <li>
+                    Vice Champion Séniors du Tournoi National de la Ville de
+                    Rabat (2026)
+                  </li>
+                  <li>Champion de la Coupe du Trône (2025)</li>
+                  <li>Vice-Champion du Maroc Interclubs (2025)</li>
+                  <li>Vice Champion de la Coupe du Trône Interclubs (2022)</li>
+                  <li>Vice Champion du Maroc Interclubs (2022)</li>
+                  <li>
+                    Multi-Champion du Maroc (Seniors Blitz à distance 2020 ,
+                    Double Universitaire 2013-2014 , Junior 2015)
+                  </li>
+                  <li>
+                    2ème au Classement des Marocains Internationaux au Festival
+                    International de la ville de Chefchaouen 2017.
+                  </li>
+                  <li>Vice Champion Blitz du Tournoi National Oulmès.</li>
+                  <li>
+                    1er Prix Catégorie ELO Tournoi Nationale de la ville de Oued
+                    Laou.
+                  </li>
+                </ul>
+              </div>
+              <div class="lead-item">
+                <h4>🎖 RECONNAISSANCE OFFICIELLE</h4>
+                <ul class="list">
+                  <li>Sacré « Meilleur Sportif Marocain de l'année » (2017)</li>
+                </ul>
+              </div>
+              <div class="lead-item">
+                <h4>🔧 EXPERTISE TECHNIQUE &amp; LEADERSHIP</h4>
+                <ul class="list">
+                  <li>Entraîneur International certifié FIDE (FI)</li>
+                  <li>Arbitre FIDE</li>
+                  <li>Conférencier International</li>
+                  <li>Organisateur International.</li>
+                  <li>Content Creator.</li>
+                </ul>
+              </div>
+              <div class="lead-item">
+                <h4>🌐 TITRES INTERNATIONAUX &amp; MAJEURS</h4>
+                <ul class="list">
+                  <li>
+                    2023: 1er Africain au Championnat du Monde WACC (Muscat)
+                  </li>
+                  <li>2017: Meilleur Sportif Marocain de l'année</li>
+                  <li>
+                    2015: Candidat Maître de la FIDE au Championnat d'Afrique
+                    Junior aux Seychelles.
+                  </li>
+                  <li>
+                    2015: Représentant Unique du Continent Africain et du Monde
+                    Arabe au Championnat du Monde (Sibérie)
+                  </li>
+                  <li>
+                    2013: Champion Francophone Junior aux Jeux de la
+                    Francophonie - Marrakech
+                  </li>
+                </ul>
+              </div>
+              <div class="lead-item">
+                <h4>🇲🇦 TITRES NATIONAUX &amp; CIRCUIT DES CLUBS</h4>
+                <ul class="list">
+                  <li>2025: Champion de la Coupe du Trône</li>
+                  <li>
+                    2025: Vice-Champion du Maroc des Interclubs (Club Najah
+                    Sousse Agadir)
+                  </li>
+                  <li>
+                    2022: Vice-Champion du Maroc des Interclubs Supersériе &amp;
+                    Vice-Champion de la Coupe du Trône
+                  </li>
+                  <li>2022: Joueur au TAC Échecs (National 1 France)</li>
+                  <li>2020: Champion du Maroc Blitz Seniors</li>
+                  <li>
+                    2018: Joueur du Club La Zubia et Champion de La Ligue
+                    2/Qualification du Club au Superclubs Espagne (Grenade,
+                    Espagne)
+                  </li>
+                  <li>2015: Champion du Maroc Junior</li>
+                  <li>2013-2014: Double Champion du Maroc Universitaire</li>
+                </ul>
+              </div>
+              <div class="lead-item">
+                <h4>🎓 QUALIFICATIONS PROFESSIONNELLES</h4>
+                <ul class="list">
+                  <li>
+                    2024 : Entraîneur Officiel de l'équipe Saoudienne Junior aux
+                    Championnat Arabe - Sousse / Tunisie.
+                  </li>
+                  <li>
+                    2021: Entraîneur International - FI (FIDE Instructor) –
+                    Certifié par la Fédération Internationale des Échecs
+                  </li>
+                  <li>2016: Norme d'Arbitre FIDE</li>
+                  <li>2016 : Entraîneur National (FRME)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-5">
+        <div class="frame section-spread">
+          <div class="section-head">
+            <span class="section-number">02 — LE PROJET SPORTIF</span>
+            <div class="section-title-wrap">
+              <h2 class="title-large">
+                Calendrier &amp; Progression Stratégique Horizon Décembre 2026
+              </h2>
+            </div>
+            <p class="section-intro">
+              La saison 2026 est structurée autour d'une progression stratégique
+              en deux temps, conçue pour maximiser la performance compétitive et
+              optimiser la visibilité internationale du partenaire. Chaque étape
+              du calendrier s'inscrit dans une logique de montée en puissance,
+              allant de la préparation en Europe à la consécration sur la scène
+              mondiale.
+            </p>
+          </div>
+          <div class="grid-2 section-grid">
+            <div class="stack">
+              <div class="card panel-quiet stack-card">
+                <span class="mini-label">Étape 1</span>
+                <h3 class="title-medium">
+                  Le Circuit Català d'Escacs (Espagne) et Tournois Masters 2026.
+                </h3>
+                <p class="body-text">· Été 2026 &amp; Fin 2026</p>
+                <p class="body-text">
+                  Le Circuit Català d'Escacs est l'une des séries d'opens
+                  internationaux les plus compétitives et les plus réputées
+                  d'Europe. Organisé en Catalogne (Espagne), ce circuit réunit
+                  chaque été des Grands Maîtres et des Maîtres Internationaux du
+                  monde entier dans le cadre d'épreuves à rythme cadencé.
+                </p>
+                <p class="body-text">
+                  Pourquoi ce circuit est stratégiquement indispensable :
+                </p>
+                <ul class="list">
+                  <li>
+                    Calibration au niveau mondial : Affronter des joueurs
+                    classés internationalement permet d'ajuster l'ouverture et
+                    la préparation tactique à un niveau que les seules
+                    compétitions nationales ne peuvent offrir.
+                  </li>
+                  <li>
+                    Acquisition de points Elo : La progression du classement
+                    FIDE est un indicateur objectif de performance qui renforce
+                    la légitimité sportive et médiatique.
+                  </li>
+                  <li>
+                    Vitrine européenne : Présence dans des villes du patrimoine
+                    culturel européen : visibilité directe pour votre marque
+                    auprès d'un public international cultivé et à fort pouvoir
+                    d'achat.
+                  </li>
+                  <li>
+                    Réseau d'élite : Interactions avec la communauté
+                    internationale des échecs, arbitres FIDE, fédérations
+                    nationales et médias spécialisés.
+                  </li>
+                </ul>
+              </div>
+              <div class="card panel-quiet stack-card">
+                <span class="mini-label">Étape 2</span>
+                <h3 class="title-medium">
+                  WACC 2026 Championnat du Monde Catégories du classement
+                  International ELO.
+                </h3>
+                <p class="body-text">· Nigéria · 01 Août 2026</p>
+                <p class="body-text">
+                  Le (WACC) est l'événement phare organisé par la FIDE à
+                  destination des joueurs de haut niveau, mais il revêt une
+                  dimension géopolitique et symbolique capitale : c'est la
+                  compétition où les nations africaines et arabes affirment leur
+                  excellence intellectuelle sur la scène planétaire.
+                </p>
+                <p class="body-text">
+                  Enjeux stratégiques pour le partenaire :
+                </p>
+                <ul class="list">
+                  <li>
+                    Visibilité panafricaine : Présence dans l'actualité sportive
+                    de l'ensemble du continent africain et du monde arabe.
+                  </li>
+                  <li>
+                    Dimension RSE &amp; soft power : Soutenir un ambassadeur
+                    sportif qui porte le drapeau marocain est un acte fort
+                    d'engagement envers l'excellence nationale et le rayonnement
+                    du Royaume.
+                  </li>
+                  <li>
+                    Médiatisation internationale : Couverture par la presse
+                    sportive francophone, arabophone et anglophone à l'occasion
+                    du WACC.
+                  </li>
+                  <li>
+                    Héritage &amp; Fierté nationale : Un titre ou une
+                    distinction au WACC 2026 constituerait un moment historique
+                    pour les échecs marocains : Un moment portant votre marque.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="stack">
+              <div class="quote-block">
+                <div class="quote-text">Horizon Décembre 2026</div>
+              </div>
+              <figure class="image-block">
+                <div class="image-placeholder">
+                  <div class="image-label">
+                    image_page_5_01<br />Calendrier stratégique — saison 2026
+                  </div>
+                </div>
+                <figcaption class="caption">
+                  Calendrier stratégique — saison 2026
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-6">
+        <div class="frame section-spread">
+          <div class="section-head">
+            <span class="section-number">CHRONOLOGIE SYNTHÉTIQUE</span>
+            <div class="section-title-wrap">
+              <h2 class="title-large">Road to December 2026</h2>
+            </div>
+          </div>
+          <figure class="image-block">
+            <div class="image-placeholder" style="min-height: 220px">
+              <div class="image-label">
+                image_page_6_01<br />Chronologie visuelle — Road to December
+                2026
+              </div>
+            </div>
+            <figcaption class="caption">
+              Chronologie visuelle — Road to December 2026
+            </figcaption>
+          </figure>
+          <div class="table-block">
+            <table>
+              <thead>
+                <tr>
+                  <th>Étape</th>
+                  <th>Période</th>
+                  <th>Événement</th>
+                  <th>Détails</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Janv. – Avr. 2026</td>
+                  <td>Phase de préparation intensive</td>
+                  <td class="timeline-label">
+                    Ouvertures, analyse, coaching<br />Optimisation du
+                    classement Elo &amp; préparation tactique
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Juin – Août 2026</td>
+                  <td>Circuit Català d'Escacs</td>
+                  <td class="timeline-label">
+                    Barcelone / Catalogne, Espagne<br />Acquisition de points
+                    Elo / Visibilité européenne
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Juillet – Août 2026</td>
+                  <td>WACC 2026 — Nigéria</td>
+                  <td class="timeline-label">
+                    Représentation officielle du Royaume du Maroc<br />Titre /
+                    Distinction nationale Rayonnement international
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Fin Août – Déc. 2026</td>
+                  <td>
+                    Fin du Circuit Català &amp; Tournoi Masters &amp; Opens
+                  </td>
+                  <td class="timeline-label">
+                    Représentation officielle du Royaume du Maroc aux plus
+                    prestigieux tournois mondiaux<br />Image de l'excellence.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-7">
+        <div class="frame section-spread">
+          <div class="section-head">
+            <span class="section-number">02 — L'ENCADREMENT TECHNIQUE</span>
+            <div class="section-title-wrap">
+              <h2 class="title-large">Une Équipe de Légende</h2>
+            </div>
+          </div>
+          <div class="grid-2 section-grid">
+            <div class="stack">
+              <div class="card panel-quiet stack-card">
+                <h3 class="title-medium">
+                  ♟ Grand Maître Viktor MOSKALENKO — Entraîneur Principal
+                </h3>
+                <p class="body-text">
+                  Grand Maître International | Champion d'Ukraine 1987 |
+                  Barcelone, Espagne
+                </p>
+              </div>
+              <div class="body-text compact">
+                <p>
+                  La performance de haut niveau aux échecs ne se construit pas
+                  seul. Pour cette saison 2026, Mohamed Amin EL FEZARI
+                  bénéficiera d'un encadrement technique d'exception, avec la
+                  présence d'un nom qui fait l'histoire de ce sport. Viktor
+                  MOSKALENKO.
+                </p>
+              </div>
+              <div class="quote-block">
+                <div class="quote-text">
+                  "Quand vous sponsorisez Mohamed Amin EL FEZARI, vous
+                  sponsorisez une méthode forgée dans l'ombre du génie Ivanchuk
+                  et portée au Maroc pour la première fois.
+                </div>
+              </div>
+              <div class="body-text compact">
+                <p>
+                  Viktor Moskalenko est l'une des figures les plus respectées et
+                  les plus prolifiques du monde des échecs. Grand Maître
+                  ukrainien né en 1960, Champion d'Ukraine 1987, il a affronté
+                  et battu les plus grandes légendes du jeu : Morozevich,
+                  Khalifman, Sveshnikov, Bronstein. Auteur de nombreux ouvrages
+                  de référence mondiaux (The Fabulous Budapest Gambit, The
+                  Wonderful Winawer, The Fully-Fledged French), il est
+                  aujourd'hui reconnu comme l'un des meilleurs instructeurs
+                  d'échecs au monde.
+                </p>
+                <p>
+                  Mais ce qui élève Viktor Moskalenko au rang de figure
+                  absolument unique dans l'histoire des échecs, c'est son lien
+                  privilégié de plus de quarante ans avec Vasyl Ivanchuk !
+                  considéré par de nombreux experts comme le joueur le plus
+                  talentueux de l'histoire à n'avoir jamais été Champion du
+                  Monde. Moskalenko l'a connu dès l'enfance, a été son second,
+                  son sparring partner et son confident d'ouverture pendant les
+                  années les plus brillantes de la carrière d'Ivanchuk.
+                </p>
+                <p>
+                  Avoir Viktor Moskalenko comme entraîneur, c'est accéder à la
+                  méthode, à la profondeur analytique et à l'ADN créatif du
+                  génie Ivanchuk : transmis à Mohamed Amin pour la saison la
+                  plus importante de sa carrière.
+                </p>
+              </div>
+            </div>
+            <figure class="image-block align-end">
+              <div class="image-placeholder">
+                <div class="image-label">
+                  image_page_7_01<br />Grand Maître Viktor MOSKALENKO — Grand
+                  Maître International | Champion d'Ukraine 1987 | Barcelone,
+                  Espagne
+                </div>
+              </div>
+              <figcaption class="caption">
+                Grand Maître Viktor MOSKALENKO — Grand Maître International |
+                Champion d'Ukraine 1987 | Barcelone, Espagne
+              </figcaption>
+            </figure>
+          </div>
+          <div class="section-grid">
+            <div class="card panel-quiet stack-card">
+              <h3 class="title-medium">♟ Équipe Technique Complémentaire</h3>
+              <p class="body-text">
+                Les échecs de haut niveau sont une épreuve d'endurance totale :
+                une partie peut durer 4 à 7 heures d'affilée, sans substitution,
+                dans une concentration absolue. Maintenir une acuité analytique
+                maximale sur cette durée exige une condition physique et
+                psychologique digne d'un athlète de haut niveau.
+              </p>
+              <p class="body-text">
+                Mohamed Amin bénéficiera d'un programme structuré en trois
+                piliers :
+              </p>
+              <ul class="list">
+                <li>
+                  Physique : coaching personnalisé - endurance, mobilité et
+                  gestion de la fatigue sur longues sessions.
+                </li>
+                <li>
+                  Psychologique : accompagnement spécialisé - gestion du stress
+                  compétitif, contrôle émotionnel et routines de concentration
+                  pré-partie.
+                </li>
+                <li>
+                  Technologique : analyses Stockfish / Leela Zero et préparation
+                  d'ouvertures ciblées adversaires.
+                </li>
+              </ul>
+            </div>
+            <div class="card panel-quiet stack-card">
+              <h3 class="title-medium">✉ Visibilité additionnelle :</h3>
+              <p class="body-text">
+                Ce parcours de préparation, entraînements, sessions Moskalenko
+                et travail mental génère une matière documentaire continue
+                (vlogs, reportages, interviews exclusives) offrant à votre
+                marque une présence organique tout au long de la saison, bien
+                au-delà des seuls jours de tournoi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-8">
+        <div class="frame section-spread">
+          <div class="section-head">
+            <span class="section-number">03 — POURQUOI LES ÉCHECS ?</span>
+            <div class="section-title-wrap">
+              <h2 class="title-large">
+                Pourquoi Associer Votre Image aux Échecs ?
+              </h2>
+            </div>
+            <p class="section-intro">
+              Les échecs ne sont pas un sport comme les autres. Ils constituent
+              un territoire de communication à part entière, alliant prestige
+              intellectuel, dimension internationale et positionnement premium.
+              Pour une entreprise qui aspire à incarner des valeurs d'excellence
+              et de leadership, le sponsoring aux échecs est un investissement
+              stratégique à fort retour d'image.
+            </p>
+          </div>
+          <div class="grid-2 section-grid">
+            <div class="lead-list">
+              <div class="lead-item">
+                <h4>1. Un Sport d'Élite Intellectuelle</h4>
+                <p class="body-text">
+                  Les échecs sont universellement reconnus comme le symbole
+                  absolu de l'intelligence stratégique et de la maîtrise
+                  analytique. S'associer à Mohamed Amin EL FEZARI, c'est
+                  projeter votre marque dans cet univers d'excellence cognitive.
+                </p>
+                <ul class="list">
+                  <li>
+                    Attributs transférés : Rigueur analytique, anticipation
+                    stratégique, sang-froid décisionnel, maîtrise sous pression
+                  </li>
+                  <li>
+                    Profil du public : Segment à fort niveau d'éducation, revenu
+                    élevé et fort pouvoir de prescription — une audience premium
+                  </li>
+                </ul>
+              </div>
+              <div class="lead-item">
+                <h4>2. Une Plateforme d'Engagement RSE Authentique</h4>
+                <p class="body-text">
+                  Le soutien à un athlète national représentant le Maroc à
+                  l'international est un levier puissant de Responsabilité
+                  Sociale d'Entreprise (RSE).
+                </p>
+                <ul class="list">
+                  <li>
+                    Développement du sport national : Contribution tangible à
+                    l'essor d'un sport intellectuel et inclusif au Maroc
+                  </li>
+                  <li>
+                    Autonomisation de la jeunesse : Votre marque devient un
+                    symbole d'encouragement pour des milliers de jeunes joueurs
+                    marocains
+                  </li>
+                  <li>
+                    Rayonnement du Royaume : Sur les échiquiers d'Europe et
+                    d'Afrique, le drapeau marocain et vos couleurs avancent
+                    ensemble
+                  </li>
+                </ul>
+              </div>
+              <div class="lead-item">
+                <h4>3. Une Synergie Naturelle avec le Monde des Affaires</h4>
+                <p class="body-text">
+                  Les échecs partagent un vocabulaire commun avec le monde de
+                  l'entreprise et de la finance : stratégie, ouverture, gambit,
+                  sacrifice calculé, jeu de position, vision à long terme.
+                </p>
+                <ul class="list">
+                  <li>
+                    Banques &amp; Finance : Précision dans la décision, gestion
+                    du risque, vision patrimoniale
+                  </li>
+                  <li>
+                    Télécoms &amp; Tech : L'intelligence artificielle appliquée
+                    aux échecs (AlphaZero, Stockfish) est un terrain
+                    d'innovation commun
+                  </li>
+                  <li>
+                    Cabinets de Conseil : La stratégie à plusieurs coups
+                    d'avance — un message naturellement aligné
+                  </li>
+                  <li>
+                    Immobilier &amp; Industrie : Construction patiente, défense
+                    solide, conquête de territoire
+                  </li>
+                </ul>
+              </div>
+              <div class="lead-item">
+                <h4>4. Une Visibilité Internationale à Coût Optimisé</h4>
+                <p class="body-text">
+                  Contrairement aux disciplines sportives de masse (football,
+                  tennis, golf), le sponsoring aux échecs offre une exposition
+                  internationale significative à des coûts incomparablement plus
+                  accessibles, avec un ratio visibilité/investissement parmi les
+                  plus favorables du marché du sponsoring sportif.
+                </p>
+                <p class="body-text">
+                  Nombre de joueurs : Plus de 600 millions de joueurs dans le
+                  monde.
+                </p>
+                <p class="body-text">
+                  les plateformes majeures chess.com et lichess.org dépassent
+                  les 150 millions de visites uniques par mois.
+                </p>
+                <p class="body-text">
+                  Une audience "Premium" &amp; Ciblée : La communauté échecs est
+                  composée majoritairement de profils CSP+, cadres, ingénieurs
+                  et décideurs. C'est une cible rare, difficile à capter, mais à
+                  fort pouvoir d'achat et hautement réceptive à l'innovation,
+                  aux nouvelles technologies et à la formation continue.
+                </p>
+              </div>
+            </div>
+            <div class="stack">
+              <div class="card panel-quiet stack-card">
+                <span class="pill">Positionnement premium</span>
+                <h3 class="title-medium">
+                  Un langage d'influence partagé par les marques exigeantes.
+                </h3>
+                <p class="body-text">
+                  Le sponsoring échiquéen associe immédiatement la marque à la
+                  méthode, à la précision et à la discipline cognitive. Dans un
+                  environnement d'affaires saturé, c'est un territoire
+                  distinctif et crédible.
+                </p>
+              </div>
+              <div class="quote-block align-end">
+                <div class="quote-text">
+                  Prestige intellectuel, dimension internationale et
+                  positionnement premium.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-9">
+        <div class="frame section-spread media-shell">
+          <div class="section-head">
+            <span class="section-number"
+              >FEZARI — EXCELLENCE STRATÉGIQUE — IMPACT</span
+            >
+            <div class="section-title-wrap">
+              <h2 class="title-large">
+                PRÉSENCE MÉDIATIQUE — DES CHIFFRES QUI CRÉENT L'IMPACT
+              </h2>
+            </div>
+          </div>
+          <div class="media-grid">
+            <div class="stack">
+              <figure class="image-block">
+                <div class="image-placeholder" style="min-height: 260px">
+                  <div class="image-label">
+                    image_page_9_01<br />Captures d'écran de passages
+                    médiatiques — contenus vidéo Instagram
+                  </div>
+                </div>
+                <figcaption class="caption">
+                  Captures d'écran de passages médiatiques — contenus vidéo
+                  Instagram
+                </figcaption>
+              </figure>
+              <div class="card panel-quiet stack-card">
+                <h3 class="title-small">L'Écho Médiatique</h3>
+                <p class="body-text">
+                  Une autorité validée par les plus grandes chaînes mondiales
+                  (BBC, Al Arabiya, TRT, 2M, SNRT). Une exposition qui garantit
+                  une crédibilité immédiate et une portée de plusieurs millions
+                  de téléspectateurs.
+                </p>
+                <h3 class="title-small">Leader du Contenu</h3>
+                <p class="body-text">
+                  N°1 de la création de contenu échiquéen dans la région MENA et
+                  en Afrique (@ChessWithFezari &amp; Fezari Chess Academy).
+                </p>
+                <h3 class="title-small">Audience Premium</h3>
+                <p class="body-text">
+                  Une communauté composée de 75% de CSP+ (cadres, ingénieurs,
+                  décideurs) : une cible rare, captive et à fort pouvoir
+                  d'achat.
+                </p>
+                <h3 class="title-small">Engagement Profond</h3>
+                <p class="body-text">
+                  Une durée d'attention moyenne supérieure à 10 minutes par
+                  contenu. Là où les réseaux sociaux sont éphémères, Fezari
+                  capte une concentration totale.
+                </p>
+              </div>
+            </div>
+            <div class="stack">
+              <div class="card panel-quiet stack-card">
+                <h3 class="title-small">POURQUOI ASSOCIER VOTRE MARQUE ?</h3>
+                <p class="body-text">
+                  Investir aux côtés de Fezari, c'est s'inscrire dans une
+                  dynamique d'excellence, de stratégie et d'innovation
+                  technologique (Expertise reconnue en Chess &amp; AI).
+                </p>
+                <p class="body-text">
+                  Associer votre image à Fezari, c'est garantir une visibilité
+                  hybride unique : une puissance virale sur le digital combinée
+                  à une légitimité médiatique internationale. Vous ne financez
+                  pas un joueur, vous devenez partenaire d'une autorité du sport
+                  mental.
+                </p>
+              </div>
+              <figure class="image-block">
+                <div class="image-placeholder" style="min-height: 220px">
+                  <div class="image-label">
+                    image_page_9_02<br />Exemple de réactions et d'engagement
+                    sur une vidéo de passage médiatique Instagram — 589K vues,
+                    5.2K likes, et une forte résonance auprès de l'audience.
+                  </div>
+                </div>
+                <figcaption class="caption">
+                  Exemple de réactions et d'engagement sur une vidéo de passage
+                  médiatique Instagram — 589K vues, 5.2K likes, et une forte
+                  résonance auprès de l'audience.
+                </figcaption>
+              </figure>
+              <div class="table-block">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Vues</th>
+                      <th>Likes</th>
+                      <th>Commentaires</th>
+                      <th>Partages</th>
+                      <th>Reprises</th>
+                      <th>Sauvegardes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>589K</td>
+                      <td>5.2K</td>
+                      <td>82</td>
+                      <td>—</td>
+                      <td>5</td>
+                      <td>470</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="card panel-quiet stack-card">
+                <p class="body-text">
+                  Exemple de réactions et d'engagement sur une vidéo de passage
+                  médiatique Instagram<br />Une capture d'écran illustrant la
+                  portée organique et l'interaction générée par le contenu :
+                  589K vues, 5.2K likes, et une forte résonance auprès de
+                  l'audience.
+                </p>
+                <h3 class="title-small">PRÉSENCE DIGITALE &amp; COMMUNAUTÉ</h3>
+                <p class="body-text">
+                  +50K Followers<br />Instagram, Facebook, LinkedIN
+                </p>
+                <p class="body-text">
+                  Instagram &amp; Facebook : @chesswithfezari ;
+                  @fezarichessacademy<br />LinkedIN : @Mohamed Amin EL FEZARI ;
+                  @FEZARI INTERNATIONAL CHESS ACADEMY<br />Followers
+                </p>
+              </div>
+              <div class="card panel-quiet stack-card">
+                <h3 class="title-small">NOS PARTENAIRES CORPORATE</h3>
+                <p class="body-text">
+                  Des entreprises de renom font confiance à Fezari et
+                  s'associent à son image d'excellence, de stratégie et de
+                  performance.
+                </p>
+                <ul class="list">
+                  <li>NTT DATA</li>
+                  <li>DXC TECHNOLOGY</li>
+                  <li>DAHAB CAFE</li>
+                  <li>SAVA TRAVEL AGENCY</li>
+                  <li>ALUMBODOR</li>
+                  <li>GRAND KNIGHTS CHESS - WASHINGTON US</li>
+                </ul>
+              </div>
+              <div class="card panel-quiet stack-card">
+                <h3 class="title-small">NOS PARTENAIRES INSTITUTIONNELS</h3>
+                <p class="body-text">
+                  Des institutions de référence accompagnent et reconnaissent
+                  l'engagement de Fezari, renforçant son ancrage local, national
+                  et international.
+                </p>
+                <ul class="list">
+                  <li>FRME — Fédération Royale Marocaine des échecs</li>
+                  <li>
+                    CHAMBRE DE COMMERCE D'INDUSTRIE ET DE SERVICES TANGER -
+                    TETOUAN - AL HOCEIMA
+                  </li>
+                  <li>PREFECTURE DE TETOUAN</li>
+                  <li>MUNICIPALITE DE TETOUAN</li>
+                </ul>
+              </div>
+              <figure class="image-block">
+                <div class="image-placeholder" style="min-height: 240px">
+                  <div class="image-label">
+                    image_page_9_03<br />Conférence : Les Échecs entre
+                    l'Intelligence Artificielle et le Cerveau Humain — présentée
+                    par Mohamed Amin EL FEZARI, International Marocain et
+                    Champion du Maroc — avec logo DXC Technology
+                  </div>
+                </div>
+                <figcaption class="caption">
+                  Conférence : Les Échecs entre l'Intelligence Artificielle et
+                  le Cerveau Humain — présentée par Mohamed Amin EL FEZARI,
+                  International Marocain et Champion du Maroc — avec logo DXC
+                  Technology
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-10">
+        <div class="frame section-spread">
+          <div class="section-head">
+            <span class="section-number">04 — FORMULES DE SPONSORING</span>
+            <div class="section-title-wrap">
+              <h2 class="title-large">
+                ♟ Formule Grand Maître — Partenaire Titre Exclusif
+              </h2>
+            </div>
+          </div>
+          <div class="grid-2 section-grid">
+            <div class="stack">
+              <p class="body-text">
+                Positionnement : Sponsor Principal &amp; Ambassadeur Exclusif
+              </p>
+              <figure class="image-block">
+                <div class="image-placeholder" style="min-height: 280px">
+                  <div class="image-label">
+                    image_page_10_01<br />Mohamed Amin EL FEZARI en compétition
+                    — veste officielle avec logo Dahab
+                  </div>
+                </div>
+                <figcaption class="caption">
+                  Mohamed Amin EL FEZARI en compétition — veste officielle avec
+                  logo Dahab
+                </figcaption>
+              </figure>
+              <div class="package-card card panel-quiet">
+                <div class="package-head">
+                  <span class="package-tag">Investissement Estimatif</span>
+                  <h3 class="title-medium">
+                    Formule Grand Maître — Saison Complète 2026
+                  </h3>
+                  <div class="package-price">50 000 – 60 000 MAD (HT)</div>
+                  <p class="body-text">Sponsor Exclusif</p>
+                </div>
+                <p class="body-text">
+                  Cette formule offre la visibilité maximale et un accès complet
+                  à toutes les activations corporate, digitales et
+                  événementielles de la saison.
+                </p>
+              </div>
+            </div>
+            <div class="stack">
+              <div class="card panel-quiet stack-card">
+                <h3 class="title-small">Branding &amp; Visibilité</h3>
+                <ul class="list">
+                  <li>
+                    Logo principal : Sur la veste officielle de tournoi
+                    (poitrine gauche, position premium) lors de TOUTES les
+                    compétitions 2026 — Europe et Nigéria
+                  </li>
+                  <li>
+                    Naming : Mention systématique « Mohamed Amin EL FEZARI —
+                    Ambassadeur [NOM ENTREPRISE] » dans tous les supports de
+                    communication
+                  </li>
+                  <li>
+                    Bannière exclusive : Présence visuelle lors des exhibitions
+                    et événements de networking organisés spécialement pour le
+                    partenaire
+                  </li>
+                  <li>
+                    Équipement complet : Logo sur veste officielle, polo de
+                    compétition, sac de tournoi, accessoires d'échecs (pendule,
+                    sac de pièces)
+                  </li>
+                </ul>
+              </div>
+              <div class="card panel-quiet stack-card">
+                <h3 class="title-small">Digital &amp; Contenu</h3>
+                <ul class="list">
+                  <li>
+                    Contenu exclusif mensuel : 1 vidéo dédiée par mois sur les
+                    réseaux sociaux (LinkedIn, Instagram, YouTube) avec branding
+                    intégral de l'entreprise
+                  </li>
+                  <li>
+                    Stories &amp; Reels de tournoi : Couverture live de chaque
+                    tournoi, mentionnant le partenaire à chaque publication
+                  </li>
+                  <li>
+                    Newsletter partenaire : Mention en tête de toutes les
+                    communications digitales de l'athlète
+                  </li>
+                  <li>
+                    Logo sur site web : Espace partenaire premium sur la future
+                    plateforme digitale de l'athlète
+                  </li>
+                </ul>
+              </div>
+              <div class="card panel-quiet stack-card">
+                <h3 class="title-small">Activation Corporate</h3>
+                <ul class="list">
+                  <li>
+                    Simultanée Executive Premium : Mohamed Amin défie
+                    simultanément les cadres dirigeants, managers et clients VIP
+                    de votre entreprise — un événement de networking unique et
+                    mémorable (jusqu'à 20 joueurs simultanément, sur site ou en
+                    ligne)
+                  </li>
+                  <li>
+                    Conférence stratégique : Présentation exclusive sur les
+                    liens entre la pensée stratégique aux échecs et la
+                    performance en entreprise (60-90 minutes, adaptée à votre
+                    audience)
+                  </li>
+                  <li>
+                    Formation 'Stratégie &amp; Décision' : Session d'initiation
+                    aux échecs pour vos équipes, animée par Mohamed Amin — team
+                    building premium
+                  </li>
+                  <li>
+                    Rapport d'impact annuel : Document complet sur les résultats
+                    sportifs, la visibilité médiatique générée et le ROI de la
+                    saison
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-11">
+        <div class="frame section-spread">
+          <div class="section-head">
+            <span class="section-number">04 — FORMULES DE SPONSORING</span>
+            <div class="section-title-wrap">
+              <h2 class="title-large">
+                ♟ Formule Maître &amp; ♙ Formule Espoir
+              </h2>
+            </div>
+          </div>
+          <div class="package-grid">
+            <div class="package-card card panel-quiet">
+              <div class="package-head">
+                <h3 class="title-medium">
+                  ♟ Formule Maître — Partenaire Principal
+                </h3>
+                <p class="body-text">
+                  Positionnement : Co-Sponsor de Haut Niveau
+                </p>
+              </div>
+              <div class="stack">
+                <h4 class="title-small">Branding &amp; Visibilité</h4>
+                <ul class="list">
+                  <li>
+                    Logo : Sur la veste officielle (poitrine droite ou manche)
+                    lors des tournois du Circuit Català et du WACC 2026
+                  </li>
+                  <li>
+                    Matériel de communication : Logo sur les supports officiels
+                    (communiqués de presse, posts LinkedIn, banderoles de
+                    présentation)
+                  </li>
+                  <li>
+                    Mentions officielles : Cité systématiquement comme
+                    partenaire principal dans les interviews et déclarations
+                    médiatiques
+                  </li>
+                </ul>
+                <h4 class="title-small">Digital &amp; Contenu</h4>
+                <ul class="list">
+                  <li>
+                    Contenu digital : 1 post dédié par tournoi sur les réseaux
+                    sociaux (minimum 4 publications par an)
+                  </li>
+                  <li>
+                    Coverage de tournoi : Stories et publications live lors des
+                    compétitions, avec mention du partenaire
+                  </li>
+                  <li>
+                    Visibilité web : Logo et lien sur la page partenaires du
+                    site de l'athlète
+                  </li>
+                </ul>
+                <h4 class="title-small">Activation Corporate</h4>
+                <ul class="list">
+                  <li>
+                    Simultanée Executive Standard : 1 événement de simultanée
+                    pour votre équipe ou clients (jusqu'à 15 joueurs) —
+                    expérience de networking unique et exclusif
+                  </li>
+                  <li>
+                    Conférence courte : Intervention de 30-45 minutes sur la
+                    stratégie et la prise de décision, lors d'un de vos
+                    événements internes
+                  </li>
+                </ul>
+                <p class="package-price">
+                  25 000 – 35 000 MAD (HT) | Co-Sponsor Principal
+                </p>
+              </div>
+            </div>
+            <div class="package-card card panel-quiet">
+              <div class="package-head">
+                <h3 class="title-medium">
+                  ♙ Formule Espoir — Partenaire Associé
+                </h3>
+                <p class="body-text">
+                  Positionnement : Partenaire Engagé &amp; Contributeur RSE
+                </p>
+              </div>
+              <div class="stack">
+                <h4 class="title-small">Branding &amp; Visibilité</h4>
+                <ul class="list">
+                  <li>
+                    Logo : Sur les supports digitaux officiels de l'athlète
+                    (posts réseaux sociaux dédiés, site web)
+                  </li>
+                  <li>
+                    Mention officielle : Citation comme partenaire dans les
+                    communiqués de presse relatifs aux deux événements majeurs
+                  </li>
+                </ul>
+                <h4 class="title-small">Digital &amp; Contenu</h4>
+                <ul class="list">
+                  <li>
+                    Publication dédiée : 1 post de remerciement et de
+                    valorisation de votre engagement sur les réseaux sociaux en
+                    début de saison
+                  </li>
+                  <li>
+                    Mention WACC : Publication spéciale lors de la participation
+                    au WACC 2026 avec mention du partenaire
+                  </li>
+                </ul>
+                <h4 class="title-small">Activation Corporate</h4>
+                <ul class="list">
+                  <li>
+                    Mini-conférence : Intervention de 20-30 minutes en format
+                    digital ou présentiel sur le thème « Échecs &amp;
+                    Performance Professionnelle »
+                  </li>
+                  <li>
+                    Invitation VIP : Invitation à l'événement de simultanée d'un
+                    autre partenaire en qualité d'observateur et de networker
+                  </li>
+                </ul>
+                <p class="package-price">
+                  10 000 – 15 000 MAD (HT) | Partenaire Associé
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-12">
+        <div class="frame section-spread">
+          <div class="section-head">
+            <span class="section-number">05 — BUDGET PRÉVISIONNEL</span>
+            <div class="section-title-wrap">
+              <h2 class="title-large">Budget Prévisionnel - Saison 2026</h2>
+            </div>
+            <p class="section-intro">
+              Le tableau ci-dessous présente une vue synthétique et transparente
+              de l'allocation des fonds collectés dans le cadre des partenariats
+              de sponsoring pour la saison compétitive 2026. Chaque poste de
+              dépense a été calculé au plus juste pour maximiser l'efficience et
+              la performance.
+            </p>
+          </div>
+          <div class="table-block">
+            <table>
+              <thead>
+                <tr>
+                  <th>Poste de Dépense</th>
+                  <th>Détail</th>
+                  <th>Estimation (MAD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Préparation &amp; Coaching — Équipe technique (Juin–Déc.
+                    2026)
+                  </td>
+                  <td>
+                    Sessions analyses logicielles, ouvertures, coaching mental
+                  </td>
+                  <td>8 000 – 12 000</td>
+                </tr>
+                <tr>
+                  <td>★ GM Viktor MOSKALENKO — Entraîneur Principal</td>
+                  <td>
+                    Grand Maître International | Second historique de Vasyl
+                    Ivanchuk — Sessions intensives (Juin–Déc. 2026) :
+                    préparation ouvertures, analyse des adversaires ciblés,
+                    stages pré-tournoi (Espagne &amp; Nigéria)
+                  </td>
+                  <td>18 000 – 25 000</td>
+                </tr>
+                <tr>
+                  <td>
+                    Déplacements &amp; Hébergement — Circuit Català, Espagne
+                  </td>
+                  <td>
+                    Vols Maroc–Barcelone, hébergement 2–3 semaines, per diem
+                  </td>
+                  <td>18 000 – 25 000</td>
+                </tr>
+                <tr>
+                  <td>Frais d'Inscription — Tournois Circuit Català</td>
+                  <td>3 à 5 opens internationaux (tarifs FIDE homologués)</td>
+                  <td>5 000 – 8 000</td>
+                </tr>
+                <tr>
+                  <td>Logistique WACC 2026 — Nigéria</td>
+                  <td>
+                    Vols internationaux, visa, hébergement officiel, per diem
+                  </td>
+                  <td>20 000 – 28 000</td>
+                </tr>
+                <tr>
+                  <td>Communication &amp; Production Digitale</td>
+                  <td>
+                    Création de contenu, vidéo, photographie professionnelle
+                  </td>
+                  <td>5 000 – 8 000</td>
+                </tr>
+                <tr>
+                  <td>Équipement &amp; Matériel Officiel</td>
+                  <td>
+                    Tenue de compétition brandée, accessoires FIDE, matériel
+                  </td>
+                  <td>3 000 – 5 000</td>
+                </tr>
+                <tr>
+                  <td>Frais Administratifs &amp; Gestion Fédérale</td>
+                  <td>
+                    Accréditations FIDE, affiliation fédération marocaine,
+                    assurances
+                  </td>
+                  <td>2 000 – 3 000</td>
+                </tr>
+                <tr>
+                  <td>BUDGET TOTAL ESTIMATIF</td>
+                  <td>Saison Complète 2026</td>
+                  <td>79 000 – 114 000 MAD</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="table-note">
+              Note : Ces estimations sont calculées sur la base des tarifs en
+              vigueur pour la saison 2026. Un budget détaillé et documenté peut
+              être fourni sur demande. Les fonds sont entièrement dédiés à la
+              saison sportive et à la création de valeur pour les partenaires.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-13">
+        <div class="frame section-spread">
+          <div class="section-head">
+            <span class="section-number"
+              >06 — CONTACT &amp; PROCHAINES ÉTAPES</span
+            >
+            <div class="section-title-wrap">
+              <h2 class="title-large">Le Premier Mouvement Décisif</h2>
+            </div>
+          </div>
+          <div class="grid-2 section-grid">
+            <div class="stack">
+              <div class="body-text lead compact">
+                <p>
+                  Chaque grande victoire commence par un premier mouvement
+                  décisif. Si vous avez lu ce dossier jusqu'ici, c'est que vous
+                  partagez, au moins en partie, la conviction que l'excellence
+                  sportive et l'excellence corporative ont des points communs
+                  bien plus profonds que l'on n'y pense au premier regard.
+                </p>
+                <p>
+                  Nous vous invitons à franchir ce premier pas et à prendre
+                  contact afin d'explorer ensemble la formule de partenariat la
+                  plus adaptée à votre stratégie de communication, à vos
+                  objectifs RSE, et à votre vision de marque.
+                </p>
+              </div>
+              <div class="card panel-quiet stack-card">
+                <h3 class="title-small">Nos Prochaines Étapes Suggérées</h3>
+                <ul class="list">
+                  <li>
+                    01 — Entretien téléphonique ou visioconférence : 30 minutes
+                    — présentation du projet, discussion des objectifs du
+                    partenaire et sélection préliminaire de la formule.
+                  </li>
+                  <li>
+                    02 — Remise de la Convention de Partenariat : Document
+                    contractuel personnalisé précisant les engagements mutuels,
+                    le calendrier des activations et les modalités de reporting
+                    et de suivi d'impact.
+                  </li>
+                </ul>
+              </div>
+              <div class="quote-block">
+                <div class="quote-text">
+                  "Aux échecs, l'inaction est une défaite. Dans le monde des
+                  affaires aussi. Le moment d'agir, c'est maintenant."
+                </div>
+              </div>
+            </div>
+            <div class="stack">
+              <div class="table-block">
+                <table class="contact-table">
+                  <thead>
+                    <tr>
+                      <th>Champ</th>
+                      <th>Valeur</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Nom</td>
+                      <td>Mohamed Amin EL FEZARI</td>
+                    </tr>
+                    <tr>
+                      <td>Titre</td>
+                      <td>
+                        Champion Marocain d'Échecs, International Marocain.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Téléphone / WhatsApp</td>
+                      <td>07-08516705</td>
+                    </tr>
+                    <tr>
+                      <td>E-mail</td>
+                      <td>contact@fezarichess.com</td>
+                    </tr>
+                    <tr>
+                      <td>LinkedIn</td>
+                      <td>Mohamed Amin EL FEZARI</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="card panel-quiet stack-card">
+                <p class="body-text">
+                  Nous restons à votre entière disposition pour toute question
+                  complémentaire, pour vous transmettre des précisions sur l'une
+                  des formules de partenariat, ou simplement pour convenir d'une
+                  rencontre autour d'un échiquier.
+                </p>
+                <p class="body-text">♟ ♝ ♜ ♛ ♚</p>
+                <p class="body-text">
+                  DOSSIER DE SPONSORING — CONFIDENTIEL — © Mohamed Amin EL
+                  FEZARI — 2026
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
